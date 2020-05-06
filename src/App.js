@@ -2,26 +2,25 @@ import React from 'react';
 import './App.css';
 import { Layout, Header, Navigation, Drawer,Content  } from 'react-mdl';
 import Main from './components/main'
-
+import { Link } from 'react-router-dom';
 function App() {
   return (
     <div className="demo-big-content">
     <Layout>
         <Header class="header-color" title=" Mr. Rahul " scroll>
             <Navigation>
-            <a href="/">Landing Page</a>
-            <a href="/about">About</a>
-            <a href="/contact">Contact</a>
-            <a href="/project">Projects</a>
-            
+            <Link to="/">Landing Page</Link>
+            <Link to="/about">About</Link>
+            <Link to="/contact">Contact</Link>
+            <Link to="/project">project</Link>
             </Navigation>
         </Header>
         <Drawer title="Mr. Navi">
             <Navigation>
-            <a href="/">Landing Page</a>
-            <a href="/about">About</a>
-            <a href="/contact">Contact</a>
-            <a href="/project">Projects</a>
+            <Link to="/">Landing Page</Link>
+            <Link to="/about">About</Link>
+            <Link to="/contact">Contact</Link>
+            <Link to="/project">project</Link>
             
             </Navigation>
         </Drawer>
